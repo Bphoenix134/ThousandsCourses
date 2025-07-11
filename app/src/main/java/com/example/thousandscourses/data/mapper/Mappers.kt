@@ -3,7 +3,7 @@ package com.example.thousandscourses.data.mapper
 import com.example.thousandscourses.data.local.model.CourseEntity
 import com.example.thousandscourses.domain.model.Course
 
-private fun Course.toEntity() = CourseEntity(
+fun Course.toEntity() = CourseEntity(
     id = id,
     title = title,
     text = text,
@@ -14,7 +14,7 @@ private fun Course.toEntity() = CourseEntity(
     publishDate = publishDate
 )
 
-private fun CourseEntity.toDomain() = Course(
+fun CourseEntity.toDomain() = Course(
     id = id,
     title = title,
     text = text,

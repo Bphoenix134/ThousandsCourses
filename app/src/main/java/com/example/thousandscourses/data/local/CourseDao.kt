@@ -14,4 +14,7 @@ interface CourseDao {
 
     @Query("SELECT * FROM course WHERE hasLike = 1")
     fun getFavoriteCourses(): Flow<List<CourseEntity>>
+
+    @Query("SELECT * FROM course")
+    fun getCourses(): Flow<List<CourseEntity>>
 }

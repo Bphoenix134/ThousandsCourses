@@ -12,5 +12,6 @@ data class CourseEntity(
     val rate: String,
     val participate: String,
     val hasLike: Boolean,
-    val publishDate: String
+    val publishDate: String,
+    val startDate: String
 )
